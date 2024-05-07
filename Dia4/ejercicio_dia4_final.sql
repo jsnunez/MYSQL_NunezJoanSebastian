@@ -77,7 +77,8 @@ INSERT INTO pais(id,nombre,continente,poblacion)
 (10,"corea","asia",100000)
 ;
 
-
+INSERT INTO pais(id,nombre,continente,poblacion) 
+    VALUES (11,"peru","america",100000)
 
  --  insertar datos de ciudades
 
@@ -93,9 +94,10 @@ INSERT INTO ciudad (id,nombre,id_pais)
 (9,"madrid",9),
 (10,"seul",10)
 ;
+INSERT INTO ciudad (id,nombre,id_pais) 
+    VALUES (11,"cali",1);
 
-
- --  insertar datos de idioma_pais
+ --  insertar datos de ciudades
 
 INSERT INTO idioma_pais(id_idioma,id_pais,es_oficial) 
  VALUES (2,1,1),
@@ -107,6 +109,29 @@ INSERT INTO idioma_pais(id_idioma,id_pais,es_oficial)
  (1,6,0),
  (8,2,1),
  (9,5,1),
- (1,5,0)
+ (1,5,0);
+ 
+ 
+-- Consulta general ciudad
+ 
+ SELECT  * from ciudad;
+ 
+ 
+  
+-- Consulta general pais
+ 
+ SELECT  * from pais
+ 
+ 
+-- consulta de tipo inner join para obtener las ciudades
+-- que estan especificamente asignadas a un pais
+
+select pais.nombre as nombrePais, ciudad.nombre as nombreCiudad
+from pais inner join ciudad 
+on pais.id = ciudad.id_pais;
+ 
+ 
+ 
+
 
 -- Desarrollado por Joan Sebastian Nuñez Serrano
