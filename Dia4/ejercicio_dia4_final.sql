@@ -95,7 +95,7 @@ INSERT INTO ciudad (id,nombre,id_pais)
 ;
 
 
- --  insertar datos de ciudades
+ --  insertar datos de idioma_pais
 
 INSERT INTO idioma_pais(id_idioma,id_pais,es_oficial) 
  VALUES (2,1,1),
