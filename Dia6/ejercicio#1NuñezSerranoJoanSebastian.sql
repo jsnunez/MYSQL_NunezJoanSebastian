@@ -32,4 +32,21 @@ ID_Estudiante varchar(3),
 ID_curso varchar(4)
 );
 
-
+INSERT INTO estudiante values
+    ('E01','Ana'),
+    ('E02','Juan'),
+    ('E03','Maria'),
+    ('E04','Pedro');
+   
+   
+INSERT INTO curso values
+    ('C101','Matematicas', 'Sr. Garcia' ),
+    ('C102','Historia', 'Sra. Lopez' ),
+    ('C103','Fisica', 'Sr. Hernandez' );
+  
+   
+INSERT INTO estudiante_curso values
+    ('E01','C101'),
+    ('E02','C102'),
+    ('E03','C101'),
+    ('E04','C103');
