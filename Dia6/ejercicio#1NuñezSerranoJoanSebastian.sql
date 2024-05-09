@@ -15,13 +15,13 @@ use dia6;
 -- creacion tabla estudiante
 
 CREATE table estudiante(
-ID_Estudiante varchar(3) primary key,
+ID_Estudiante varchar(3),
 Nombre_Estudiante varchar(25));
 
 -- creacion tabla cursos
 
 CREATE table curso(
-ID_Curso varchar(4) primary key,
+ID_Curso varchar(4),
 Nombre_Curso varchar(25),
 Nombre_profesor varchar(25));
 
