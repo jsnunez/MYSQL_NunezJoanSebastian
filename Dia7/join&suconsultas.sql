@@ -47,7 +47,7 @@ WHERE asignatura.id_profesor  IS NULL;
 
 SELECT asignatura.nombre
 FROM asignatura 
-WHERE asignatura.id_profesor  IS NULL
+WHERE asignatura.id_profesor  IS NULL;
 
 
 -- Devuelve un listado con todos los departamentos que tienen alguna asignatura 
