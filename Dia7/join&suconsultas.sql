@@ -58,8 +58,9 @@ WHERE asignatura.id_profesor  IS NULL;
 SELECT d.nombre , a.nombre 
 FROM departamento d INNER JOIN profesor p 
 ON d.id = p.id_departamento INNER JOIN asignatura a 
-ON p.id = a.id_profesor LEFT JOIN curso_escolar c
-ON a.curso = c.id WHERE c.id IS NULL;
+ON p.id = a.id_profesor LEFT JOIN alumno_se_matricula_asignatura asma 
+ON a.id = asma.id_asignatura  WHERE asma.id_asignatura IS NULL;
+
 
 -- Devuelve el número total de alumnas que hay.
 
