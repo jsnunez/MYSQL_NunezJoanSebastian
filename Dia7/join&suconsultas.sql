@@ -46,8 +46,7 @@ WHERE asignatura.id_profesor  IS NULL;
 -- Devuelve un listado con las asignaturas que no tienen un profesor asignado.
 
 SELECT asignatura.nombre
-FROM asignatura LEFT JOIN profesor
-ON asignatura.id_profesor=profesor.id
+FROM asignatura 
 WHERE asignatura.id_profesor  IS NULL
 
 
