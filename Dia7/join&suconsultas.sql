@@ -37,10 +37,10 @@ ON p.id_departamento = d.id
 WHERE p.id IS NULL;
 -- Devuelve un listado con los profesores que no imparten ninguna asignatura
 
-SELECT profesor.id
+SELECT profesor.nombre 
 FROM profesor LEFT JOIN asignatura
 ON profesor.id=asignatura.id_profesor
-WHERE profesor.id IS NULL
+WHERE asignatura.id_profesor  IS NULL;
 
 
 -- Devuelve un listado con las asignaturas que no tienen un profesor asignado.
